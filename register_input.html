@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新用户注册</title>
+<script type="text/javascript" src="javascripts/register.js">
+function check(){
+	if(form1.password1.value != form1.password2.value){
+		alert("密码设置失败！");
+		form1.password1.focus();
+		return false;
+	}
+}
+</script>
+<style type="text/css">
+   .a td{font-family:微软雅黑;font-size:18px}
+</style>
+</head>
+<body>
+<form name="form1" method="post" action="register_do.jsp">
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="a">
+  <tr>
+    <td colspan="2"><img src="images/login_input_01.jpg" width="900" height="100" border="0" usemap="#Map"></td>
+  </tr>
+  <tr>
+    <td width="403" height="40">
+      <label>
+      <div align="right">昵称
+        <input type="text" name="username">
+      </div>
+      </label>    </td>
+    <td width="497" rowspan="6" height="400"><div align="right"><img src="images/register_input_01.jpg" width="400" height="400"></div></td>
+  </tr>
+  <tr>
+    <td height="40">
+      <label>
+      <div align="right">手机号
+        <input type="text" name="telephone">
+      </div>
+      </label>    </td>
+  </tr>
+  <tr>
+    <td height="40">
+      <label>
+      <div align="right">设置密码
+        <input type="password" name="password1">
+      </div>
+      </label>    </td>
+  </tr>
+  <tr>
+    <td height="40">
+      <label>
+      <div align="right">确认密码
+        <input type="password" name="password2">
+      </div>
+      </label>    </td>
+  </tr>
+  <tr>
+    <td height="40">
+      <label>
+      <div align="center">
+        <label>
+
+          <div align="right">
+            <input type="radio" name="sex" value="男">
+            男
+            <input type="radio" name="sex" value="女">
+            女</div>
+              </label>
+        <label>
+        <div align="right"></div>
+          </label>
+      </div></label></td>
+  </tr>
+  <tr>
+    <td height="40">
+      <label>
+      <div align="right">生日
+        <input type="text" name="birthday">
+      </div>
+      </label>    </td>
+  </tr>
+  <tr>
+    <td>
+      <label>
+        
+        <div align="right">
+          <input type="submit" onSubmit="return check()" name="Submit" value="提交" width="100px">
+        </div>
+      </label>    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="images/copyright.jpg" width="900" height="100"></td>
+  </tr>
+</table>
+
+
+<map name="Map"><area shape="rect" coords="50,16,366,88" href="homepage.html">
+</map></body>
+</html>

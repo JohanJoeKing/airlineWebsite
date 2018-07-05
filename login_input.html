@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>芙蓉用户登录界面</title>
+<style>
+   .a td{font-family:微软雅黑}
+</style>
+<script type="text/JavaScript" src="javascripts/login_input.js">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body onLoad="MM_preloadImages('images/login_input_07_2.jpg','images/login_input_08_2.jpg')">
+<form name = form1 onSubmit="return check()" action="login_do.jsp" method = "post">
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="0" class="a">
+  <tr>
+    <td height="100" colspan="2"><img src="images/login_input_01.jpg" width="900" height="100" border="0" usemap="#Map"></td>
+  </tr>
+  <tr>
+    <td width="500" height="130" background="images/login_input_04.jpg">&nbsp;</td>
+    <td width="400" height="400" rowspan="6" background="images/login_input_03.jpg">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td height="40" background="images/login_input_05_1.jpg">
+
+      <div align="center">
+          <label>账号
+            <input name="account" type="text" maxlength="15">
+          </label>
+    </div></td>
+  </tr>
+  <tr>
+    <td height="40" background="images/login_input_05_2.jpg">
+      <div align="center">
+          <label>密码
+            <input name="password" type="password" maxlength="16">
+          </label>
+    </div></td>
+  </tr>
+  <tr>
+    <td height="50" background="images/login_input_05_3.jpg"><div align="center">
+      <input name="image" type="image" src="images/login_input_07_1.jpg" align="middle">
+    </div></td>
+  </tr>
+  <tr>
+    <td height="50" background="images/login_input_06_1.jpg"><div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('注册','','images/login_input_08_2.jpg',1)"></a><a href="register_input.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('注册','','images/login_input_08_2.jpg',1)"><img src="images/login_input_08_1.jpg" name="注册" width="180" height="30" border="0"></a></div></td>
+  </tr>
+  <tr>
+    <td height="90" background="images/login_input_06_2.jpg">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"><img src="images/copyright.jpg" width="900" height="100"></td>
+  </tr>
+</table>
+</form>
+<map name="Map"><area shape="rect" coords="53,13,365,86" href="homepage.html">
+</map></body>
+</html>
